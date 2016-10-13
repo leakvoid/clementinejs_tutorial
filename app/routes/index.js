@@ -11,5 +11,7 @@ module.exports = function(app, db) {
 	});
 
     app.route('/api/clicks')
-	.get(clickHandler.getClicks);
+	.get(clickHandler.getClicks)
+	.post(clickHandler.addClick)
+	.delete(clickHandler.resetClicks);
 };
