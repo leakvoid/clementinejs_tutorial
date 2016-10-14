@@ -14,4 +14,12 @@ module.exports = function(app, db) {
 	.get(clickHandler.getClicks)
 	.post(clickHandler.addClick)
 	.delete(clickHandler.resetClicks);
+
+        
+    /*  
+      app.route('/controllers/clickController.client.js')
+	.get(function(req, res) {
+	    res.sendFile(process.cwd() + '/app/controllers/clickHandler.client.js');
+	}); 
+    */
 };
