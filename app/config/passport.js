@@ -29,7 +29,7 @@ module.exports = function(passport) {
 		if(user)
 		    return done(null, user);
 		else {
-		    var newUser = newUser();
+		    var newUser = User();
 
 		    newUser.github.id = profile.id;
 		    newUser.github.username = profile.username;

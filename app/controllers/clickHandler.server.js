@@ -1,6 +1,6 @@
 'use strict';
 
-var Clicks = require('../models/users.js');
+var Users = require('../models/users.js');
 
 function clickHandler() {
 
